@@ -1,0 +1,13 @@
+body
+{
+ background-color: aquamarine;
+}
+table,td
+{
+    background-color: white;
+    border: 2px darkblue solid;
+}
+table
+{
+    margin: auto;
+}
