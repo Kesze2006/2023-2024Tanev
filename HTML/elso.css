@@ -2,12 +2,43 @@ body
 {
  background-color: aquamarine;
 }
-table,td
+table
 {
     background-color: white;
+    border: 2px darkblue solid;
+    text-align: center;
+}
+td
+{
     border: 2px darkblue solid;
 }
 table
 {
     margin: auto;
+}
+tr:nth-child(odd)
+{
+    background-color: purple;
+}
+tr:nth-child(6)
+{
+    font-size: x-large;
+}
+tr:nth-child(10) td
+{
+    border-width: 5px;
+}
+tr:nth-child(n + 6)
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+tr:nth-child(even):hover
+{
+    background-color: grey;
+}
+tr:hover:nth-child(odd)
+{
+    background-color: black;
+    color: white;
 }
