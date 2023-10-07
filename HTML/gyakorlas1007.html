@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <title>Bootstrap valami cucli</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            .jobb{
+                text-align: right;
+            }
+            .kozep{
+                text-align: center;
+            }
+            .nagy{
+                font-size: x-large;
+            }
+            body{
+                background-color: green;
+                color: aqua
+            }
+        </style>
+    </head>
+    <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+        <form>
+            <div class="form-text mb-3 kozep">
+                <label class="form-label nagy">Név: <input type="text" class="form-control form-control-sm" id="nev" placeholder="Kelemen Ádám"></label>
+            </div>
+
+            <div class="form-check form-switch mb-3">
+                <label class="nagy">Kötelező <input class="form-check-input" type="checkbox" role="switch" id="kotelezo"></label>
+            </div>
+
+            <div class="form-check mb-3 jobb">
+                <input type="radio"> <label class="nagy"> mindenkinek</label> <br> <input type="radio"> <lable class="nagy"> regisztráltaknak</lable>
+            </div>
+            
+            <div class="form-check mb-3 kozep">
+                <label class="nagy">Publikus: <input type="checkbox"></label>
+            </div>
+
+            <div class="form-textarea mb-3">
+                <label class="nagy">Kitöltési segédlet: </label>
+                <textarea lass="form-control" id="szovegdoboz" rows="3"></textarea>
+            </div>
+            <div class="mb-3 kozep">
+                <label for="customRange1" class="form-label nagy">Csúszka</label>
+                <input type="range" class="form-range" id="customRange1">
+            </div>
+        </form>
+    </body>
+</html>
