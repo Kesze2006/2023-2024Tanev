@@ -1,0 +1,96 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <style>
+            fieldset{
+                background-color: green;
+            }
+            legend{
+                background-color: green;
+                border: 1px solid black;
+            }
+            .szin{
+                background-color: greenyellow;
+            }
+            body{
+                padding-right: 1545px;
+            }
+            .gomb{
+                border: 1px solid green;
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <div>
+                <fieldset>
+                    <legend>Belépési adatok</legend>
+                    <label>Belépési név</label>
+                    <br>
+                    <input type="text" name="bnev" placeholder="Próba Jóska" class="szin">
+                    <br>
+                    <label>E-mail</label>
+                    <br>
+                    <input type="email" name="email" placeholder="nincs@om.hu">
+                    <br>
+                    <label>Jelszó</label>
+                    <br>
+                    <input type="password" name="jelszo" placeholder="123456">
+                    </fieldset>
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Személyes adatok</legend>
+                    <label>Születési dátum</label>
+                    <input type="date" name="">
+                    <br>
+                    <label>Nem</label>
+                    <br>
+                    <input type="radio" id="ferfi" value="ferfi" name="Nem">
+                    <label>Férfi</label>
+                    <input type="radio" id="no" value="no" name="Nem">
+                    <label>Nő</label>
+                    <input type="radio" id="egyeb" value="egyeb" name="Nem">
+                    <label>Egyéb</label>
+                    <br>
+                    <label>Születési hely</label>
+                    <select>
+                        <option>Nagyatád</option>
+                        <option>Kaposvár</option>
+                        <option>Nagykanizsa</option>
+                    </select>
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Egyéb</legend>
+                    Allergia
+                    <br>
+                    <input type="checkbox">
+                    <label>Mogyoró</label>
+                    <input type="checkbox">
+                    <label>Tejcukor</label>
+                    <input type="checkbox">
+                    <label>Glutén</label>
+                    <input type="checkbox">
+                    <label>Bullshit</label>
+                    <input type="checkbox">
+                    <label>Ezüst</label>
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Gombok</legend>
+                    <div>
+                        <input type="reset" value="Törlés" class="szin gomb">
+                        <input type="submit" value="Mentés" class="szin gomb">
+                    </div>
+                </fieldset>
+            </div>
+        </form>
+    </body>
+</html>
