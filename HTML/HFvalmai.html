@@ -9,6 +9,15 @@
                 to {
                     transform: rotate(360deg);
                 }
+            
+            }
+            @keyframes rotation2{
+                from{
+                    transform: rotate(360deg);
+                }
+                to{
+                    transform: rotate(0deg);
+                }
             }
             #div1 > #div2{
                 margin: auto;
@@ -35,11 +44,20 @@
             }
             body{
                 background-image: url(logo2.png);
+                background-repeat: repeat;
+                animation: rotation2 20s infinite linear;
+            }
+            #belso{
+                animation: rotation2 3s infinite linear;
+            }
+            p.szoveg{
+                color: aqua;
+                font-size: xx-large;
             }
         </style>
-        #nem lehet megcsinálni
     </head>
     <body>
+        <p class="szoveg"><b>11C 11C 11C 11C 11C 11C 11C 11C 11C 11C 11C 11C 11C 11C 11C 11C 11C 11C 11C </b></p>
         <div id = "kulso">
             <div id="div1">
                 <div id="div2">
@@ -52,9 +70,11 @@
                                             <div id="div9">
                                                 <div id="div10">
                                                     <div id="div11">
-                                                        <div id="kuka"><b>11C
-                                                            <p>Szavazz ránk!!</p>
-                                                        </b></div>
+                                                        <div id="kuka">
+                                                            <div id="belso">
+                                                                <b>11C<p>Szavazz ránk!!</p></b>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
