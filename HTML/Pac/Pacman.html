@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pac-Man</title>
+        <style>
+            @keyframes szellemoda{
+                from{
+                    margin-top: 0%;
+                    margin-left: 0%;
+                }
+                to{
+                    margin-top: 75%;
+                    margin-left: 75%;
+                }
+            }
+            @keyframes szellemfog{
+                from{
+                    transform: rotate(45deg);
+                    background-image: url(szellem.png);
+                }
+                to{
+                    transform: scaleX(-1) rotate(-45deg);
+                    background-image: url(iett.png);
+                }
+            }
+            @keyframes szellemvissz{
+                from{
+                    margin-top: 75%;
+                    margin-left: 75%;
+                }
+                to{
+                    margin-top: 0%;
+                    margin-left: 0%;
+                }
+            }
+            @keyframes szellemforg2{
+                from{
+                    transform: scaleX(-1) rotate(-45deg);
+                    background-image: url(iett.png);
+                }
+                to{
+                    transform: scaleX(1);
+                    background-image: url(szellem.png);
+                }
+            }
+            @keyframes szellemkoz{
+                from{
+                    margin: none;
+                }
+                to{
+                    margin: auto;
+                }
+            }
+
+
+            @keyframes pacoda{
+                from{
+                    margin-left: 25%;
+                }
+                to{
+                    margin-left: 75%;
+                }
+            }
+            @keyframes pacforg{
+                from{
+                    transform: rotate(45deg);
+                }
+                to{
+                    transform: scaleX(-1) rotate(-45deg);
+                }
+            }
+            @keyframes pacvissz{
+                from{
+                    margin-left: 75%;
+                }
+                to{
+                    margin-left: 25%;
+                }
+            }
+            @keyframes pacforg2 {
+                from{
+                    transform: scaleX(-1) rotate(-45deg);
+                }
+                to{
+                    transform: scaleX(1);
+                }
+            }
+            @keyframes packoz{
+                from{
+                    margin: none;
+                }
+                to{
+                    margin: auto;
+                }
+            }
+            @keyframes forog{
+                from{
+                    transform: rotate(0deg);
+                }
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+
+            body{
+                background-color: black;                
+            }
+            #szellem{
+                width: 255px;
+                height: 258px;
+                background-image: url(szellem.png);
+                transform: rotate(45deg);
+                animation: szellemoda 6s, szellemforg 6s, szellemvissz 6s, szellemforg2 6s, szellemkoz 6s, forog 6s infinite linear;
+
+            }
+            #pac{
+                margin-left: 20%;
+                width: 292px;
+                height: 260px;
+                background-image: url(pac.png);
+                transform: rotate(45deg);
+                animation: pacoda 6s, pacforg 6s, pacvissz 6s, pacforg2 6s, packoz 6s, forog 6s infinite linear;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="szellem"></div>
+        <div id="pac"></div>
+    </body>
+</html>
