@@ -19,7 +19,34 @@
                     transform: rotate(0deg);
                 }
             }
-            #div1 > #div2{
+            @keyframes kep{
+                from
+                {
+                    background-image: conic-gradient(red, yellow, green, blue, orange, pink);
+                    border-radius: 25%;
+                    border-radius: 100%;
+                }
+                to{
+                    background-image: conic-gradient(black, darkblue,blue, lightblue, purple,pink,white );
+                    border-radius: 100%;
+                    border-radius: 25%;
+                }
+            }
+            @keyframes kepmas{
+                from
+                {
+                    background-image: conic-gradient(red, yellow, green, blue, orange, pink);
+                    border-radius: 25%;
+                    border-radius: 100%;
+                }
+                to{
+                    background-image: conic-gradient(darkblue,darkred,white,purple,darkgreen,brown);
+                    border-radius: 100%;
+                    border-radius: 25%;
+                }
+            }
+
+            #div1{
                 margin: auto;
                 height: 500px;
                 width: 500px;
@@ -28,6 +55,28 @@
                 box-shadow: 50px 50px 50px 50px black;
                 box-shadow: 50px 50px 50px 50px black inset;
                 animation: rotation 3s infinite linear;
+                transition: width 5s;
+                animation-name: kep;
+                animation-duration: 5s;
+            }   
+            #div1:hover{
+                width: 1000px;
+            }
+            #divforog{
+                margin: auto;
+                height: 500px;
+                width: 500px;
+                background-image: conic-gradient(red, yellow, green, blue, orange, pink);
+                border-radius: 25%;
+                box-shadow: 50px 50px 50px 50px black;
+                box-shadow: 50px 50px 50px 50px black inset;
+                animation: rotation2 3s infinite linear;
+                transition: width 5s;
+                animation-name: kepmas;
+                animation-duration: 5s;
+            }
+            #divforog:hover{
+                width: 1000px;
             }
             div{
                 text-shadow: 5px 5px 2px purple;          
@@ -54,6 +103,7 @@
                 color: aqua;
                 font-size: xx-large;
             }
+
         </style>
     </head>
     <body>
@@ -73,6 +123,35 @@
                                                         <div id="kuka">
                                                             <div id="belso">
                                                                 <b>11C<p>Szavazz ránk!!</p></b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "kulso">
+            <div id="divforog">
+                <div id="div2">
+                    <div id="div3">
+                        <div id="div4">
+                            <div id="div5">
+                                <div id="div6">
+                                    <div id="div7">
+                                        <div id="div8">
+                                            <div id="div9">
+                                                <div id="div10">
+                                                    <div id="div11">
+                                                        <div id="kuka">
+                                                            <div id="belso">
+                                                                <b>11C<p>Mindennek a közepe!</p></b>
                                                             </div>
                                                         </div>
                                                     </div>
