@@ -1,0 +1,38 @@
+[
+    {
+        "image": "../assets/csocsi.png",
+        "name": "csocsi"
+    },
+    {
+        "image": "../assets/dani.png",
+        "name": "dani"
+    },
+    {
+        "image": "../assets/en.png",
+        "name": "en"
+    },
+    {
+        "image": "../assets/gabo.png",
+        "name": "gabo"
+    },
+    {
+        "image": "../assets/laci.png",
+        "name": "laci"
+    },
+    {
+        "image": "../assets/martin.png",
+        "name": "martin"
+    },
+    {
+        "image": "../assets/oliver.png",
+        "name": "oliver"
+    },
+    {
+        "image": "../assets/penge.png",
+        "name": "penge"
+    },
+    {
+        "image": "../assets/igen.png",
+        "name": "igen"
+    }
+]
