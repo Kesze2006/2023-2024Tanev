@@ -97,6 +97,7 @@ function restart(){
     document.querySelector(".score").textContent = score;
     gridContainer.innerHTML = "";
     generateCards();
+    reset();
 }
 class Timer {
     constructor () {
