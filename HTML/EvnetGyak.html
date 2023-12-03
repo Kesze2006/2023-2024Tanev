@@ -8,16 +8,30 @@
             {
                 width: 80px;
                 height: 80px;
-                color: gold;
+                color: orange;
                 background-color: black;
-                border: solid red 2px;
-                border-radius: 50px;
+                border-radius: 25px;
             }
             #kijelzo
             {
                 border: solid black 3px;
                 height: 80px;      
-                width: 240px;    
+                width: 330px;   
+                background-color: white; 
+            }
+            #k{
+                
+                width: 333px;
+                height: 500px;
+                background-color:pink;
+                padding-top: 30px;
+                padding-left: 30px;
+            }
+            #lk{
+                background-color: pink;
+                height: 600px;
+                width: 400px;
+                border: solid black 3px;
             }
         </style>
     </head>
@@ -67,28 +81,37 @@
             <input type="text" id="szoveg" onkeypress="gombnyomas()">
         </form>
 
-        <h1>Számológép</h1>
-        <div id="kijelzo">0</div>
-        <form>
-            <input type="button" value="7" id="" onclick="nyomas('7')">
-            <input type="button" value="8" id="" onclick="nyomas('8')">
-            <input type="button" value="9" id="" onclick="nyomas('9')">
-            <br>
-            <input type="button" value="4" id="" onclick="nyomas('4')">
-            <input type="button" value="5" id="" onclick="nyomas('5')">
-            <input type="button" value="6" id="" onclick="nyomas('6')">
-            <br>
-            <input type="button" value="1" id="" onclick="nyomas('1')">
-            <input type="button" value="2" id="" onclick="nyomas('2')">
-            <input type="button" value="3" id="" onclick="nyomas('3')">
-            <br>
-            <input type="button" value="0" id="" onclick="nyomas('0')">
-            <input type="button" value="C" id="" onclick="nyomas('C')">
-            <br>
-            <input type="button" value="+" id="" onclick="muvelet('+')">
-            <input type="button" value="-" id="" onclick="muvelet('-')">
-            <input type="button" value="*" id="" onclick="muvelet('*')">
-            <input type="button" value="/" id="" onclick="muvelet('/')">
-        </form>
+        <h1 style="padding-left: 110px;">Számológép</h1>
+        <div id="lk">
+            <div id="k">
+                <div id="kijelzo">0</div>
+                <form>
+                    <input type="button" value="OFF" id="" onclick="kikapcs()">
+                    <input type="button" value="√" id="" onclick="muvelet('gyokvonas')">
+                    <input type="button" value="%" id="" onclick="muvelet('%')">
+                    <input type="button" value="÷" id="" onclick="muvelet('/')">
+                    <br>
+                    <input type="button" value="7" id="" onclick="nyomas('7')">
+                    <input type="button" value="8" id="" onclick="nyomas('8')">
+                    <input type="button" value="9" id="" onclick="nyomas('9')">
+                    <input type="button" value="X" id="" onclick="muvelet('*')">
+                    <br>
+                    <input type="button" value="4" id="" onclick="nyomas('4')">
+                    <input type="button" value="5" id="" onclick="nyomas('5')">
+                    <input type="button" value="6" id="" onclick="nyomas('6')">
+                    <input type="button" value="-" id="" onclick="muvelet('-')">
+                    <br>
+                    <input type="button" value="1" id="" onclick="nyomas('1')">
+                    <input type="button" value="2" id="" onclick="nyomas('2')">
+                    <input type="button" value="3" id="" onclick="nyomas('3')">
+                    <input type="button" value="+" id="" onclick="muvelet('+')">
+                    <br>
+                    <input type="button" value="0" id="" onclick="nyomas('0')">
+                    <input type="button" value="C" id="" onclick="nyomas('C')">
+                    <input type="button" value="⋅" id="" onclick="muvelet('.')">
+                    <input type="button" value="=" id="" onclick="muvelet('=')">
+                </form>
+            </div>
+        </div>
     </body>
 </html>
