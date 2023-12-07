@@ -26,12 +26,14 @@
                 background-color:pink;
                 padding-top: 30px;
                 padding-left: 30px;
+                border-radius: 25px;    
             }
             #lk{
                 background-color: pink;
                 height: 600px;
                 width: 400px;
                 border: solid black 3px;
+                border-radius: 25px;
             }
         </style>
     </head>
@@ -54,7 +56,7 @@
                 }
                 else
                 {
-                    if (k.innerHTML==="0")
+                    if (k.innerHTML==="0" || beforemuvelet== "=")
                     {
                         k.innerHTML="";
                     }
@@ -64,16 +66,39 @@
             }
 
             let before =0;
-            let beforemuvelet="";
+            let beforemuvelet="+";
 
             function muvelet(jel)
             {
+
                 if(beforemuvelet==="+")
                 {
                     before += parseInt(document.getElementById("kijelzo").innerHTML); 
                     beforemuvelet=jel;
                 }
+                else if(beforemuvelet==="-")
+                {
+                    before -= parseInt(document.getElementById("kijelzo").innerHTML); 
+                    beforemuvelet=jel;
+                }
+                else if(beforemuvelet==="/")
+                {
+                    before /= parseInt(document.getElementById("kijelzo").innerHTML); 
+                    beforemuvelet=jel;
+                }
+                else if(beforemuvelet==="*")
+                {
+                    before *= parseInt(document.getElementById("kijelzo").innerHTML); 
+                    beforemuvelet=jel;
+                }
 
+                document.getElementById("kijelzo").innerHTML="0";
+                console.log(jel,before);
+
+                if(beforemuvelet == "=")
+                {
+                    document.getElementById("kijelzo").innerHTML=before;
+                }
             }
         </script>
         <h1></h1>
