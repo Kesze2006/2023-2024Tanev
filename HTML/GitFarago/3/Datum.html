@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function datum() 
+            {
+            var d=new Date();
+            document.getElementById("ev").innerHTML="Év: "+d.getFullYear();
+            document.getElementById("ho").innerHTML="Hónap: "+(parseInt(d.getMonth())+1);
+            document.getElementById("nap").innerHTML="Nap: "+d.getUTCDate();
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Dátum: <h1>
+        <p id="ev"></p>
+        <p id="ho"></p>
+        <p id="nap"></p>
+
+        <form>
+            <input type="button" onclick="datum()" value="Ide kattintva tudja kiíratni a mai dátumot">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+
+        <p id="ötezer"></p>
+        <p id="ezer"></p>
+        <p id="ötszáz"></p>
+        <p id="kétszáz"></p>
+        <p id="száz"></p>
+        <p id="maradek"></p>
+        <script>
+            var szam = prompt("Kérek egy számot: ");
+            var otezer = 0;
+            var ezer =0;
+            var otszaz = 0;
+            var ketszaz = 0;
+            var szaz =0;
+
+            while(szam >= 5000)
+            {
+                szam = parseInt(szam) - 5000;
+                otezer += 1;
+            }
+            document.getElementById("ötezer").innerHTML="Ötezres: "+otezer;
+            while(szam >= 1000)
+            {
+                szam = parseInt(szam) - 1000;
+                ezer += 1;
+            }
+            document.getElementById("ezer").innerHTML="Ezer: "+ezer;
+            while(szam >= 500)
+            {
+                szam = parseInt(szam) - 500;
+                otszaz += 1;
+            }
+            document.getElementById("ötszáz").innerHTML="Ötszáz: "+otszaz;
+            while(szam >= 200)
+            {
+                szam = parseInt(szam) - 200;
+                ketszaz += 1;
+            }
+            document.getElementById("kétszáz").innerHTML="Kétszáz:  "+ketszaz;
+            while(szam >= 100)
+            {
+                szam = parseInt(szam) - 100;
+                szaz += 1;
+            }
+            document.getElementById("száz").innerHTML="Száz "+szaz;
+            document.getElementById("maradek").innerHTML="Maradék: "+szam;
+        </script>
+
+    </body>
+</html>

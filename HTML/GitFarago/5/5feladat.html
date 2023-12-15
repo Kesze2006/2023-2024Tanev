@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+
+        <h1>Felszín:</h1>
+        <h2 id="fe"></h2>
+        <script>
+            var felszin;
+            var oldalhossz = prompt("Kérem a tetraeder oldalának hosszát: ");
+            felszin = (parseInt(oldalhossz)*parseInt(oldalhossz))*1.73;
+            document.getElementById("fe").innerHTML=String(felszin);
+        </script>
+        <h1>Térfogat: </h1>
+        <h2 id="te"></h2>
+        <script>
+            var terulet = (parseInt(oldalhossz)*parseInt(oldalhossz)*parseInt(oldalhossz))*0.12;
+            document.getElementById("te").innerHTML=String(terulet);
+        </script>
+    </body>
+</html>
