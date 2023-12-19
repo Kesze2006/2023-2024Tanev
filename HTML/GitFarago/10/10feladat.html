@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1 id="koszon"></h1>
+        <script>
+            var ido = prompt("Kérek egy egész órát 0 és 24 között: ")
+            if(parseInt(ido) > 24 || parseInt(ido) < 0 || ido.length > 2)
+            {
+                alert("Hiba van a rendszerben!")
+            }
+            else{
+                if(parseInt(ido) >= 4 && parseInt(ido) <= 9)
+                {
+                    document.getElementById("koszon").innerHTML="Jó reggelt!"
+                }
+                else if(parseInt(ido) >= 10 && parseInt(ido) <= 17)
+                {
+                    document.getElementById("koszon").innerHTML="Jó napot!"
+                }
+                else if(parseInt(ido) >= 18 && parseInt(ido) <= 21)
+                {
+                    document.getElementById("koszon").innerHTML="Jó estét!"
+                }
+                else if(parseInt(ido) >= 22 || parseInt(ido) <= 3 && parseInt(ido) >= 0)
+                {
+                    document.getElementById("koszon").innerHTML="Jó északát!"
+                }
+            }
+        </script>
+    </body>
+</html>
