@@ -18,12 +18,29 @@
 
             function gomDisz()
             {
+                let maxH = 880;
+                let maxW= 810;
+
+                let magassag = rand(0,1000);
+
+                let arany = maxW/maxH*magassag;
+                let szelesseg= maxW/2+rand(-1*arany/2,arany/2);
+
+
+                let valtozo = rand(0,1)
+
                 elem=document.createElement("img");
-                elem.src="gomb.png";
+                if(valtozo == 0)
+                {
+                    elem.src="csaje.png";
+                }
+                else{
+                    elem.src="gom2.png";
+                }
                 elem.style.height=rand(30,120)+"px";
                 elem.style.position="absolute";
-                elem.style.left=rand(0,700)+"px";
-                elem.style.top=rand(0,700)+"px";
+                elem.style.left=szelesseg+"px";
+                elem.style.top=magassag+"px";
 
                 document.getElementById("fenyo").appendChild(elem);
             }
