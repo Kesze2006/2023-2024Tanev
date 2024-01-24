@@ -4,9 +4,25 @@
 
     </head>
     <body>
-
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi vitae temporibus, inventore quaerat modi perferendis magni doloribus voluptatum molestias provident, sint dicta illo molestiae recusandae voluptate rerum nesciunt. Eos repudiandae sequi suscipit repellendus aliquid dolorem modi nulla natus qui impedit? Dolorum a, quasi ab officia laboriosam sed exercitationem voluptatum distinctio.            <ul>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi vitae temporibus, inventore quaerat modi perferendis magni doloribus voluptatum molestias provident, sint dicta illo molestiae recusandae voluptate rerum nesciunt. Eos repudiandae sequi suscipit repellendus aliquid dolorem modi nulla natus qui impedit? Dolorum a, quasi ab officia laboriosam sed exercitationem voluptatum distinctio.            
+            <ul>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar tristique sem. Fusce interdum mollis erat, nec malesuada justo euismod eget. Sed sed feugiat purus. Pellentesque facilisis, purus eget venenatis scelerisque, arcu mi cursus turpis, ut aliquam eros libero ac velit. Sed a enim eu erat rutrum malesuada eu dictum.
+                    <ul>
+                        <li>alakmasdfse</li>
+                        <li>sadasdasdas</li>
+                        <li>ssdadasdasdasd</li>
+                    </ul>
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar tristique sem. Fusce interdum mollis erat, nec malesuada justo euismod eget. Sed sed feugiat purus. Pellentesque facilisis, purus eget venenatis scelerisque, arcu mi cursus turpis, ut aliquam eros libero ac velit. Sed a enim eu erat rutrum malesuada eu dictum.
+                    <ul>
+                        <li>alakmasdfse</li>
+                        <li>sadasdasdas</li>
+                        <li>ssdadasdasdasd</li>
+                    </ul>
+                </li>
                 <li>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar tristique sem. Fusce interdum mollis erat, nec malesuada justo euismod eget. Sed sed feugiat purus. Pellentesque facilisis, purus eget venenatis scelerisque, arcu mi cursus turpis, ut aliquam eros libero ac velit. Sed a enim eu erat rutrum malesuada eu dictum.
                     <ul>
@@ -18,7 +34,24 @@
             </ul>
         </p>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi vitae temporibus, inventore quaerat modi perferendis magni doloribus voluptatum molestias provident, sint dicta illo molestiae recusandae voluptate rerum nesciunt. Eos repudiandae sequi suscipit repellendus aliquid dolorem modi nulla natus qui impedit? Dolorum a, quasi ab officia laboriosam sed exercitationem voluptatum distinctio.            <ul>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi vitae temporibus, inventore quaerat modi perferendis magni doloribus voluptatum molestias provident, sint dicta illo molestiae recusandae voluptate rerum nesciunt. Eos repudiandae sequi suscipit repellendus aliquid dolorem modi nulla natus qui impedit? Dolorum a, quasi ab officia laboriosam sed exercitationem voluptatum distinctio.            
+            <ul>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar tristique sem. Fusce interdum mollis erat, nec malesuada justo euismod eget. Sed sed feugiat purus. Pellentesque facilisis, purus eget venenatis scelerisque, arcu mi cursus turpis, ut aliquam eros libero ac velit. Sed a enim eu erat rutrum malesuada eu dictum.
+                    <ul>
+                        <li>alakmasdfse</li>
+                        <li>sadasdasdas</li>
+                        <li>ssdadasdasdasd</li>
+                    </ul>
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar tristique sem. Fusce interdum mollis erat, nec malesuada justo euismod eget. Sed sed feugiat purus. Pellentesque facilisis, purus eget venenatis scelerisque, arcu mi cursus turpis, ut aliquam eros libero ac velit. Sed a enim eu erat rutrum malesuada eu dictum.
+                    <ul>
+                        <li>alakmasdfse</li>
+                        <li>sadasdasdas</li>
+                        <li>ssdadasdasdasd</li>
+                    </ul>
+                </li>
                 <li>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar tristique sem. Fusce interdum mollis erat, nec malesuada justo euismod eget. Sed sed feugiat purus. Pellentesque facilisis, purus eget venenatis scelerisque, arcu mi cursus turpis, ut aliquam eros libero ac velit. Sed a enim eu erat rutrum malesuada eu dictum.
                     <ul>
@@ -78,12 +111,25 @@
                 <td>4-5</td>
             </tr>
             <tr>
-                <td>3-1</td>
-                <td>3-2</td>
-                <td>3-3</td>
-                <td>3-4</td>
-                <td>3-5</td>
+                <td>5-1</td>
+                <td>5-2</td>
+                <td>5-3</td>
+                <td>5-4</td>
+                <td>5-5</td>
             </tr>
         </table>
+        <script>
+
+            document.getElementsByTagName("body")[0].children[0].style.backgroundColor="aqua";
+            
+            let masodik = document.querySelector("ul");
+            let i = 0;
+            for(i < masodik.children[1].children[0].children.length; i++;)
+            {
+                masodik.children[1].children[0].children[i].style.color="red"
+            }
+            
+
+        </script>
     </body>
 </html>
