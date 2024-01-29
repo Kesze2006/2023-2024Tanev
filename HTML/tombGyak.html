@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            const elso = [];
+            for(let i = 1; i <= 100; i++ )
+            {
+                elso.push(i);
+            }
+            console.log(elso);
+
+            const masodik = [];
+            for(let i = 100; i >= 1; i-- )
+            {
+                masodik.unshift(i);
+            }
+            console.log(masodik);
+
+            const harmadik = [];
+            for(let i = 1; i <= 100; i++ )
+            {
+                harmadik[i-1]=i;
+            }
+            console.log(harmadik)
+
+            const forditott = []
+            for(let i = 1; i <= 100; i++ )
+            {
+                forditott.unshift(i);
+            }
+            console.log(forditott);
+
+
+        </script>
+    </body>
+</html>
