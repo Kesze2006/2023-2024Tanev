@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Házi Feladat!</title>
+    </head>
+    <body>
+        <div id="h">
+
+        </div>
+        <script>
+
+            let panel = document.getElementById("h");
+            const szamok = [];
+            for(let i = 0; i < 5; i++)
+            {
+                szamok.push(Math.floor(Math.random() * 11));                
+            }
+            console.log(szamok);
+            for(let i = 0; i < szamok.length; i++)
+            {
+                if(i === 0)
+                {
+                    uj = document.createElement("div");
+                    uj.innerHTML = szamok[i]+","+szamok[i+1];
+                    panel.appendChild(uj);
+                    console.log(szamok[i]+","+szamok[i+1])
+                }
+                else if(i === szamok.length-1)
+                {
+                    uj = document.createElement("div");
+                    uj.innerHTML = szamok[i-1]+","+szamok[i]
+                    panel.appendChild(uj);
+                    console.log(szamok[i-1]+","+szamok[i])
+                }
+                else
+                {
+                    uj = document.createElement("div");
+                    uj.innerHTML = szamok[i-1]+","+szamok[i]+","+szamok[i+1];
+                    panel.appendChild(uj);
+                    console.log(szamok[i-1]+","+szamok[i]+","+szamok[i+1])
+                }
+            }
+        </script>
+        
+    </body>
+</html>
