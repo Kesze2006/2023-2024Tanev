@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <script>
+
+            class hangszoro
+            {
+                constructor(marka, szin, teljesitmeny,csatlakozas)
+                {
+                    this.marka=marka
+                    this.szin=szin
+                    this.teljesitmeny=teljesitmeny+"-Watt"
+                    this.csatlakozas = csatlakozas
+                }
+                get tulajdonos()
+                {
+                    return this._tulaj
+                }
+                set tulajdonos(nev)
+                {
+                    this._tulaj = nev[0].toUpperCase()+nev.substring(1).toLowerCase();
+                }
+            }
+
+
+            class vezetekes extends hangszoro
+            {
+                csat()
+                {
+                    console.log("Be van dugva")
+                }
+            }
+
+            class Bluethoot extends vezetekes
+            {
+                csat()
+                {
+                    console.log("Párosítva")
+                }
+            }
+
+            let h1 = new hangszoro("Sony","Feket",50,"USB")
+            console.log(h1.teljesitmeny)
+            let h2  = new vezetekes("JBL","Piros",150,"3.5 Jack")
+            console.log(h2.csatlakozas)
+            let h3 = new Bluethoot("Logitech","Zöld",250,"Bluethoot")
+            h2.csat()
+            h3.csat()
+
+
+
+        </script>
+
+    </body>
+</html>
