@@ -10,7 +10,18 @@
         <div class="gomb"  onclick="feldat2()">
             2.Feladat
         </div>
-        <div class="megoldas" id="feldat2"></div>
+        <div class="megoldas" id="feladat2"></div>
+
+        <div class="gomb"  onclick="feldat3()">
+            3.Feladat
+        </div>
+        <div class="megoldas" id="feladat3"></div>
+
+        <div class="gomb"  onclick="feldat4()">
+            4.Feladat
+        </div>
+        <div class="megoldas" id="feladat4"></div>
+
         <script>
 
             class Par
@@ -31,15 +42,34 @@
             {
                 tancok.push(new Par(sorok[i],sorok[i+1],sorok[i+2]))
             }
+
             function feldat2()
             {
-                document.getElementById("feldat2").innerHTML="az elsőként bemutatott tánc a "+tancok[0].tanc+" volt az utolsó pedig "+ tancok[tancok.length-1].tanc+" volt!";
+                ir("feladat2","Az elsőként bemutatott tánc a "+tancok[0].tanc+" volt az utolsó pedig "+ tancok[tancok.length-1].tanc+" volt!")
             }
+
             function feldat3()
             {
-                let darb = 0;
+                let darab = 0;
 
-                tancok.forEach(function() {  })
+                tancok.forEach(function(ertek) {
+                    if(ertek.tanc==="samba")
+                    darab++})
+                
+                ir("feladat3","Sambat "+darab+" ember táncolt.")
+            }
+
+            function ir(hova,mi)
+            {
+                document.getElementById(hova).innerHTML=mi;
+            }
+
+            function feldat4()
+            {
+                const vilmaTancai = tancok.filter(function(v){
+                    if(v.lany==="Vilma")
+                    return v
+                })
             }
         </script>
     </body>
