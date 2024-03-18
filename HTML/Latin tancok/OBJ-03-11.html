@@ -6,6 +6,7 @@
         <title>OBJ-03-11</title>
     </head>
     <body>
+
         <h1>Latin táncok</h1>
         <div class="gomb"  onclick="feldat2()">
             2.Feladat
@@ -21,6 +22,12 @@
             4.Feladat
         </div>
         <div class="megoldas" id="feladat4"></div>
+
+        <div class="gomb"  onclick="feldat5()">
+            5.Feladat
+        </div>
+        Táncnév: <input type="text" id="beker">
+        <div class="megoldas" id="feladat5"></div>
 
         <script>
 
@@ -68,9 +75,31 @@
             {
                 const vilmaTancai = tancok.filter(function(v){
                     if(v.lany==="Vilma")
-                    return v
+                    {
+                        return v;
+                    }
+                        
                 })
+                const tancNevek = [] 
+                vilmaTancai.forEach(function(v){
+                    tancNevek.push(v.tanc)
+                })
+                ir("feladat4","Vilma a következő táncokat táncolta: "+tancNevek)
             }
+
+            function feldat5()
+            {
+                const vilmaTancai = tancok.filter(function(v){
+                    if(v.lany==="Vilma")
+                    {
+                        return v;
+                    }
+                })
+                let tanc = document.getElementById("beker").te
+                console.log(tanc)
+                ir("feladat5","A "+tanc)
+            }
+            
         </script>
     </body>
 </html>
