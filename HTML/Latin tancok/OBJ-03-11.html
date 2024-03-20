@@ -95,9 +95,29 @@
                         return v;
                     }
                 })
-                let tanc = document.getElementById("beker").te
-                console.log(tanc)
-                ir("feladat5","A "+tanc)
+                let tanc = document.getElementById("beker").value;
+                let fiu = "";
+                let jo = false;
+                vilmaTancai.forEach(function(v){
+                    if(tanc === v.tanc)
+                    {
+                        fiu = v.fiu;
+                        jo = true;
+                    }
+                    else
+                    {
+                        
+                    }
+                })
+                if(jo === true)
+                {
+                    ir("feladat5","Tánc: "+tanc+" Vilma párja: "+fiu);
+                }
+                else
+                {
+                    ir("feladat5","Vilma nem táncolt ilyen táncot");
+                }
+                
             }
             
         </script>
