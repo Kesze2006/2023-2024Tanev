@@ -23,11 +23,22 @@
         </div>
         <div class="megoldas" id="feladat4"></div>
 
-        <div class="gomb"  onclick="feldat5()">
+        <div class="gomb">
             5.Feladat
         </div>
-        Táncnév: <input type="text" id="beker">
+        Táncnév: <input type="text" id="beker" onkeyup=feldat5()>
         <div class="megoldas" id="feladat5"></div>
+
+        <div class="gomb"  onclick="feldat6()">
+            6.Feladat
+        </div>
+        <div class="megoldas" id="feladat6"></div>
+
+        <div class="gomb"  onclick="feldat7()">
+            7.Feladat
+        </div>
+        <div class="megoldas" id="feladat7"></div>
+
 
         <script>
 
@@ -115,9 +126,32 @@
                 }
                 else
                 {
-                    ir("feladat5","Vilma nem táncolt ilyen táncot");
+                    ir("feladat5","Vilma nem táncolta a(z)"+tanc+"-ot");
                 }
                 
+            }
+            function feldat6()
+            {
+                const lany = [];
+                const fiu = [];
+                tancok.forEach(function(x){
+                    if(!lany.includes(x.lany))
+                    {
+                        lany.push(x.lany)
+                    }
+                    if(!fiu.includes(x.fiu))
+                    {
+                        fiu.push(x.fiu)
+                    }
+                    ir("feladat6","Lányok: "+lany.join(", ")+"<br>"+" Fiúk: "+fiu.join(", "))
+                })
+            }
+            function feldat7()
+            {
+                const lanyok ={};
+                tancok.forEach(function(x){
+                    lanyok[x]=x
+                })
             }
             
         </script>
