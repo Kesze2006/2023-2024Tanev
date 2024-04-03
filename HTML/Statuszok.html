@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <h2 onclick="kiir()">100 Continue</h2>
+        <div id="100"></div>
+        <h2 onclick="kiir2()">101 Switching Protocols</h2>
+        <div id="101"></div>
+        <h2 onclick="kiir3()">103 Early Hints</h2>
+        <div id="103"></div>
+        <h2 onclick="kiir4()">200 OK</h2>
+        <div id="200"></div>
+        <h2 onclick="kiir5()">201 Created</h2>
+        <div id="201"></div>
+        <h2 onclick="kiir6()">202 Accepted</h2>
+        <div id="202"></div>
+        <h2 onclick="kiir7()">203 Non-Authoritative Information</h2>
+        <div id="203"></div>
+        <h2 onclick="kiir8()">204 No Content</h2>
+        <div id="204"></div>
+        <h2 onclick="kiir9()">205 Reset Content</h2>
+        <div id="205"></div>
+        <h2 onclick="kiir10()">206 Partial Content</h2>
+        <div id="206"></div>
+        
+        <script>
+            function iras(id,szöveg)
+            {
+                document.getElementById(id).innerHTML=szöveg;
+            }
+            function kiir()
+            {
+                iras("100","A szerver megkapta a kérés fejléceit, és az ügyfélnek tovább kell küldenie a kérés törzsét")
+            }
+            function kiir2()
+            {
+                iras("101","A kérelmező protokollváltásra kérte a szervert")
+            }
+            function kiir3()
+            {
+                iras("103","A Hivatkozás fejléccel együtt használva lehetővé teszi a böngésző számára, hogy megkezdje az erőforrások előtöltését, miközben a szerver választ készít")
+            }
+            function kiir4()
+            {
+                iras("200","A kérés rendben van (ez a szabványos válasz a sikeres HTTP kérésekre)")
+            }
+            function kiir5()
+            {
+                iras("201","A kérés teljesítve, és új erőforrás jön létre")
+            }
+            function kiir6()
+            {
+                iras("202","A kérelmet feldolgozásra elfogadták, de a feldolgozás még nem fejeződött be")
+            }
+            function kiir7()
+            {
+                iras("203","A kérést sikeresen feldolgoztuk, de olyan információkat ad vissza, amelyek más forrásból származhatnak")
+            }
+            function kiir8()
+            {
+                iras("204","A kérést sikeresen feldolgoztuk, de nem ad vissza tartalmat")
+            }
+            function kiir9()
+            {
+                iras("205","A kérés feldolgozása sikeresen megtörtént, de nem ad vissza tartalmat, és a kérelmezőnek vissza kell állítania a dokumentumnézetet")
+            }
+            function kiir10()
+            {
+                iras("206","A szerver az erőforrásnak csak egy részét szállítja az ügyfél által küldött tartományfejléc miatt")
+            }
+        </script>
+    </body>
+</html>
