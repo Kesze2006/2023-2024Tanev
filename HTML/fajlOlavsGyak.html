@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="keke"> </div>
+        <br>
+        <div id="keke2"> </div>
+
+        <script>
+            function olvas()
+            {
+                var olvaso = new XMLHttpRequest()
+                olvaso.onload = function()
+                {
+                    document.getElementById("keke").innerHTML = olvaso.responseText
+                }  
+                olvaso.open("GET","proba.txt")
+                olvaso.send()
+            }
+            olvas();
+            function olvas2()
+            {
+                var olvaso = new XMLHttpRequest()
+                olvaso.onload = function()
+                {
+                    const valasz = JSON.parse(this.response)
+                    document.getElementById("keke2").innerHTML = "<h1>"+valasz.nev+"</h1>"+"<h3>"+valasz.cim+"</h3>"
+                }  
+                olvaso.open("GET","proba2.json")
+                olvaso.send()
+            }
+            olvas2();
+
+
+
+            document.getElementById("keke").animate([
+            // key frames
+            { color: "blue"},
+            { color: "red"},
+            {color: "green"},
+            {color: "yellow"}
+            ], {
+            // sync options
+            duration: 10000,
+            iterations: Infinity
+            });
+        </script>
+        
+    </body>
+</html>
