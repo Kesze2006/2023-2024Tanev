@@ -1,4 +1,8 @@
 {
     "nev":"Verbulecz Bencze",
-    "cim":"a tevepásztor"
+    "cim":"a tevepásztor",
+    "kor":15,
+    "nem":"férfi",
+    "személyigazolványszám":"KL9IKJ8HNK",
+    "emberek": ["Horváth Hunor","Pap László"]
 }
